@@ -17,6 +17,7 @@ public class ClientCartTest extends BaseTestCase {
 
         String token = getAuthToken(login);
 
+        //Запрос с авторизационным токеном
         Response getClientCard = this.makeGetRequestWithAuthToken("/cart", token);
 
         //responseProductList.then().extract().as(GetProductList.class);
